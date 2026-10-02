@@ -1,0 +1,24 @@
+{
+  "core": {
+    "magic": "APF_VER_1",
+    "metadata": {
+      "platform_ids": ["imgview"],
+      "shortname": "ImgView",
+      "description": "Shows a 160x144 image from the SD card 1:1",
+      "author": "Custom",
+      "url": "",
+      "version": "1.0.0",
+      "date_release": "2026-10-01"
+    },
+    "framework": {
+      "target_product": "Analogue Pocket",
+      "version_required": "1.1",
+      "sleep_supported": false,
+      "dock": { "supported": true, "analog_output": false },
+      "hardware": { "link_port": false, "cartridge_adapter": -1 }
+    },
+    "cores": [
+      { "id": 0, "name": "default", "file": "core.rbf_r" }
+    ]
+  }
+}

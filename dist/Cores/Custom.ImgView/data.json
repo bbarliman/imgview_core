@@ -1,0 +1,16 @@
+{
+  "data": {
+    "magic": "APF_VER_1",
+    "data_slots": [
+      {
+        "name": "Image (160x144 RGB565)",
+        "id": 0,
+        "required": true,
+        "parameters": "0x0",
+        "extensions": ["bin"],
+        "size_maximum": "0xB400",
+        "address": "0x10000000"
+      }
+    ]
+  }
+}
