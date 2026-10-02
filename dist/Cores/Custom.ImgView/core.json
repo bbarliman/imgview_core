@@ -18,7 +18,7 @@
       "hardware": { "link_port": false, "cartridge_adapter": -1 }
     },
     "cores": [
-      { "id": 0, "name": "default", "file": "core.rbf_r" }
+      { "id": 0, "name": "default", "file": "bitstream.rbf_r" }
     ]
   }
 }

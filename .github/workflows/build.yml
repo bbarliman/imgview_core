@@ -38,13 +38,13 @@ jobs:
               quartus_cpf -c ap_core.sof ap_core.rbf
           fi
 
-      - name: Bit-reverse rbf -> core.rbf_r and package SD-card layout
+      - name: Bit-reverse rbf -> bitstream.rbf_r and package SD-card layout
         run: |
           CORE=package/Cores/Custom.ImgView
           mkdir -p "$CORE" package/Platforms
           python3 - <<'PY'
           src = "template/src/fpga/output_files/ap_core.rbf"
-          dst = "package/Cores/Custom.ImgView/core.rbf_r"
+          dst = "package/Cores/Custom.ImgView/bitstream.rbf_r"
           table = bytes(int(f"{i:08b}"[::-1], 2) for i in range(256))
           open(dst, "wb").write(open(src, "rb").read().translate(table))
           PY
